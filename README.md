@@ -1,0 +1,1 @@
+# symfony-progress-bar-standalone
