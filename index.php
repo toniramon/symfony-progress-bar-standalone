@@ -2,7 +2,6 @@
 require './vendor/autoload.php';
 
 use Symfony\Component\Console\Helper\ProgressBar;
-use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Formatter\OutputFormatter;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
@@ -27,7 +26,6 @@ $progressBar = new ProgressBar($output, $rows);
 $progressBar->setBarCharacter('<fg=magenta>=</>');
 $progressBar->setProgressCharacter("\xF0\x9F\x8D\xBA");
 
-$table = new Table($output);
 for ($i = 0; $i<$rows; $i++) {
     // Your beautiful code here.
     usleep(100);
